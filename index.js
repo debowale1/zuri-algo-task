@@ -21,7 +21,7 @@ const checkYuGiOh = (n) => {
 
   if(isNaN(n)){
     if(typeof(n) === "string"){
-      return `invalid parameter: "${n}"`
+      return `invalid parameter: "${JSON.stringify(n)}"`
     }
   }
   let newArray = []
