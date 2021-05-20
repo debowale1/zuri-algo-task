@@ -1,10 +1,10 @@
 const convertFahrToCelsius = (temp) => {
   let celcius;
   if(Array.isArray(temp)) {
-    return `${temp} is not a valid number but a/an array.`
+    return `${JSON.stringify(temp)} is not a valid number but a/an array.`
   }
   if(typeof temp === "object") {
-    return `{"temp":${temp.temp}} is not a valid number but a/an object.`
+    return `${JSON.stringify(temp)} is not a valid number but a/an object.`
   }
   if( typeof temp === 'string'){
     celcius = (Number(temp) - 32) * 5/9;
